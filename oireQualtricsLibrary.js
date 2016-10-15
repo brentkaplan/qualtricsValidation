@@ -416,7 +416,7 @@ function qualtricsPercentage(equation, output, qid, watchCells) {
     });
 }
 
-function timesTwo(input, output, qid, watchCells) {
+function timesTwo(equation, output, qid, watchCells) {
 	// default watchCells to the cells used in equation
     if (watchCells === undefined) {
         watchCells = mathCalc(equation, output, qid)[1];
