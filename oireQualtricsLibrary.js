@@ -416,5 +416,16 @@ function qualtricsPercentage(equation, output, qid, watchCells) {
     });
 }
 
+function timesTwo(input, output, qid, watchCells) {
+	// default watchCells to the cells used in equation
+    if (watchCells === undefined) {
+        watchCells = mathCalc(equation, output, qid)[1];
+    }
+
+	watchSet(watchCells, function(){
+        output.down().value = ((mathCalc(equation,output,qid)[0]).toFixed(1)).toString();
+    });
+}
+
 
 
