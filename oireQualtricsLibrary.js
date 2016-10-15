@@ -412,7 +412,7 @@ function qualtricsPercentage(equation, output, qid, watchCells) {
     // the nameless function here runs the mathCalc function on the given equation, 
     // multiplies the output by 100, and appends '%' to it, as to produce a percentage-format
     watchSet(watchCells, function(){
-        output.down().value = ((mathCalc(equation,output,qid)[0]*100).toFixed(1)).toString().concat("%");
+        output.down().value = ((mathCalc(equation,output,qid)[0]*1).toFixed(1)).toString().concat("%");
     });
 }
 
